@@ -1,4 +1,3 @@
-// import searchForm from './templates/search-form.hbs';
 import imageItemsCard from './templates/image-items.hbs';
 import ImageApiSearchService from './api/api';
 import './styles.css';
@@ -31,6 +30,8 @@ function onSearch(e) {
 function fetchImages() {
   imageApiSearchService.fetchImages().then(responce => {
     appendImagesCardItems(responce);
+    if (responce.length > 12) {
+    }
   });
 }
 

@@ -3,7 +3,8 @@ html {
 }
 body {
   margin: 40px;
-  /* background-color: gray; */
+
+  background-color: #484f58;
 }
 .search-form {
   width: 500px;
@@ -44,6 +45,9 @@ body {
   display: flex;
   justify-content: space-between;
   width: 400px;
+}
+.stats-item {
+  display: flex;
 }
 
 .load_more_btn {
